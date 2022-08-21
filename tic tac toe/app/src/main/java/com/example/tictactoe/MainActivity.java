@@ -103,7 +103,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     else
                     {
-                        showDialogue("X is WINNER");
+                        if (filledPos[val0] == PLAYER_X)
+                        {
+                            showDialogue("X is Winner");
+                        }
+                        else
+                        showDialogue("GAME IS TIE");
                     }
                 }
             }
@@ -138,6 +143,8 @@ private void restartGame (){
     btn8.setText("");
     isGameActive = true;
 }
+private void tiegame(){
 
+}
 
 }
